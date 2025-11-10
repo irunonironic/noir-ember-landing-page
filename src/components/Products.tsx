@@ -128,19 +128,34 @@ export default function Products() {
                   {product.description}
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                  <span className="text-3xl font-extrabold bg-gradient-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent">
+                  {/* Price */}
+                  <span className="text-2xl md:text-3xl font-extrabold text-white/90 leading-none translate-y-[1px]">
                     {product.price}
                   </span>
 
+                  {/* Add Button */}
                   <button
                     onClick={() => handleAddToCart(product.id)}
-                    className={`px-6 py-2 font-black rounded-xl text-sm uppercase tracking-wide transition-all duration-300 overflow-hidden relative ${
-                      addedToCart === product.id
-                        ? "bg-green-500 text-white"
-                        : "bg-amber-400 text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(255,191,0,0.4)]"
-                    }`}
+                    className={`flex items-center justify-center gap-2 px-6 py-[9px] 
+      font-semibold rounded-full text-sm tracking-wide 
+      transition-all duration-300 overflow-hidden relative
+      ${
+        addedToCart === product.id
+          ? "bg-yellow-500 text-black"
+          : "bg-gradient-to-r from-yellow-200 via-amber-400 to-orange-600 text-black hover:scale-105 hover:shadow-[0_0_20px_rgba(255,191,0,0.4)]"
+      }`}
                   >
-                    {addedToCart === product.id ? "✓ Added" : "Add →"}
+                    {addedToCart === product.id ? (
+                      <>
+                        <span>✓</span>
+                        <span>Added</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Add</span>
+                        <span className="text-base translate-y-[1px]">→</span>
+                      </>
+                    )}
                   </button>
                 </div>
               </div>
