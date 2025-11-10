@@ -3,7 +3,7 @@ import candle from "../assets/candle.jpeg";
 export default function About() {
   return (
     <section
-      className="w-full px-4 py-20 md:py-32 bg-black relative overflow-hidden"
+      className="w-full px-4 py-20 md:py-32 bg-black relative overflow-hidden "
       id="about"
     >
       <div className="absolute -right-32 top-1/4 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />

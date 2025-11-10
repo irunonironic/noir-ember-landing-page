@@ -41,7 +41,7 @@ export default function Page() {
 
       <section
         id="home"
-        className="relative flex flex-col md:flex-row items-center justify-between w-full min-h-screen px-6 md:px-16 lg:px-24 bg-black text-white overflow-hidden pt-24 md:pt-0"
+        className="relative flex flex-col md:flex-row items-center justify-between w-full min-h-screen px-6 md:px-16 lg:px-24 bg-black text-white overflow-hidden pt-24 md:pt-0 "
       >
         <div className="absolute top-20 right-10 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-10 left-10 w-48 h-48 bg-amber-400/10 rounded-full blur-3xl" />
@@ -108,7 +108,7 @@ export default function Page() {
               transition={{ duration: 1 }}
               className="flex-1 z-10 text-center space-y-8 max-w-lg mx-auto px-4"
             >
-              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase bg-gradient-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent pt-8">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase bg-gradient-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent pt-10">
                 Light That Feels Like Home
               </p>
 
